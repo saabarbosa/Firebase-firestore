@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Example</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom styles for this template -->
+  <link href="css/shop-homepage.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Example</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+                <br />
+                <div class="row">
+                    
+                    <div class="col-lg-12 col-md-12 mb-12">
+                        <div class="card h-100">
+                            <div class="card-footer">
+                                <h3>Produto</h3>
+                            </div>
+
+                            <form style="padding:20px">
+                                <div class="form-group">
+                                    <label for="NameCompany">Nome</label>
+                                    <div class="input-group">
+
+                                        <input id="NameProduct" name="NameProduct" placeholder="Informe o nome do seu produto" type="text" required="required" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Description">Descrição</label>
+                                    <textarea id="Description" name="Description" cols="40" rows="10" aria-describedby="DescriptionHelpBlock" class="form-control"></textarea>
+                                    <span id="DescriptionHelpBlock" class="form-text text-muted">Adicione informações sobre seu produto</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Category">Categoria</label>
+                                    <div>
+                                        <select id="Category" name="Category" aria-describedby="CategoryHelpBlock" required="required" class="custom-select">
+                                        </select>
+                                        <span id="CategoryHelpBlock" class="form-text text-muted">Selecione uma marca</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Photo">Imagem</label>
+                                    <div class="input-group">
+                                        <input id="Photo" name="Photo" placeholder="Informe a URL da foto do seu produto" type="text" required="required" class="form-control">
+                                    </div>
+                                </div>								
+                                <div class="form-group">
+								    <div style="text-align:center" id="loading_data"><img src="img/loading.gif" alt="carregando..." /></div>
+                                    <button name="SaveData" id="SaveData" type="button" class="btn btn-primary">Confirmar dados</button>
+                                </div>
+                            </form>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- /.row -->
+                <br />
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+     <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Example 2020</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/create.js"></script>
+
+
+</body>
+
+</html>
